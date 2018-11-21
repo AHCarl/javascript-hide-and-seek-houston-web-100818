@@ -19,7 +19,7 @@ function deepestChild() {
   let deepList = document.getElementById('grand-node');
   let deepest;
   
-  while (deepList.hasChildNodes()) {
+  if (deepList.hasChildNodes()) {
     deepest = deepList.querySelector('div')
   }
   return deepest;
